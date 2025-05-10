@@ -122,6 +122,14 @@
     .signin-link a:hover {
       text-decoration: underline;
     }
+
+    .btns-div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
   </style>
 </head>
 <body>
@@ -138,12 +146,15 @@
       <input type="email" placeholder="Email here" />
       <input type="password" placeholder="*********" />
       <p class="signin-link">Already a Member Yet? <a href="#">Sign in</a></p>
-      <button class="btn">Sign Up</button>
-      <p class="or">or</p>
-      <div class="google-btn">
-        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google icon" />
-        Sign up with Google
+      <div class="btns-div">
+        <button class="btn">Sign Up</button>
+        <p class="or">or</p>
+        <div class="google-btn">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google icon" />
+          Sign up with Google
+        </div>
       </div>
+    
     </div>
   </div>
 </body>
