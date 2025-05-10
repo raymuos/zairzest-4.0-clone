@@ -37,9 +37,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding-inline: 80px;
-    
-    
-    height: 75px;
+    height: max(10vh, 75px);
 }
 
 #menu-div{
@@ -59,7 +57,7 @@ header{
 }
 
 #zairzest-span{
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-family: Beyno;
     font-weight: 300;
     letter-spacing: 0.75rem;
@@ -73,9 +71,9 @@ header{
     color: #38CCFF;
 }
 
-#hero-div{
+#hero-back-div{
     background-image: 
-    linear-gradient(to bottom, #11111100 50%, #111111),  
+    linear-gradient(to bottom, #11111100, #111111),  
     url(../Public/images/175eefb2e004ea385a051c1f3d9033c0bdcd33bb.jpg);
     height: 100vh;
     background-size: cover;
@@ -85,14 +83,23 @@ header{
     justify-content: center;
     align-items: flex-start;
     gap: 3.5rem;
-    padding-inline: 15vw;
+    padding-inline: 10vw;
 }
 
+.hero-div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3.5rem;
+    padding: 50px;
+    border-radius: 5px;
+}
 #hero-heading{
     font-size: 3rem;
     font-weight: 600;
     text-align: left;
-    width: min(500px, 85vw)
+    width: min(500px, 85vw);
 }
 
 #hero-btns-div{

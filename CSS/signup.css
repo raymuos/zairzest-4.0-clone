@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Outfit;
+    src: url(../Public/fonts/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Outfit;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    background-image: linear-gradient(to bottom, #11111175, #11111175),
+    url('../Public/images/4095f2aebf516787f155d0719b819679583330f3.jpg');
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+    width: 60vw;
+}
+
+.left h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.left p {
+    margin-top: 20px;
+    font-size: 1rem;
+    max-width: 400px;
+}
+
+.right {
+    flex: 1;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    font-size: 2em;
+    color: #38CCFF;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.small-text {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+button{
+    font: inherit;
+}
+
+.btn {
+    width: 120.99999237060547;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #38CCFF;
+    color: #01265D;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.or {
+    text-align: center;
+    width: 15px;
+    height: 21px;
+    top: 569px;
+    left: 1061px;
+    margin: 15px 0;
+    color: #A8A8A8;
+}
+
+.google-btn {
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid #01265D;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;  
+}
+
+.google-btn img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.signin-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.signin-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signin-link a:hover {
+    text-decoration: underline;
+}
+
+.btns-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
