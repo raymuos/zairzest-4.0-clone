@@ -3,6 +3,15 @@
     src: url(../Public/fonts/Outfit-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: Beyno;
+    src: url(../Public/fonts/BEYNO.ttf);
+}
+
+@font-face {
+    font-family: Mohave;
+    src: url(../Public/fonts/Mohave-VariableFont_wght.ttf);
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,6 +23,52 @@ body {
     display: flex;
     height: 100vh;
 }
+
+/* header{
+    background: #121212;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 80px;
+    height: max(10vh, 75px);
+}
+
+#menu-div{
+    display: flex;
+    gap: 60px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+#menu-div a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu-div a:hover, a:focus {
+    color: #007aff;
+}
+
+#zairzest-span{
+    font-size: 2rem;
+    font-family: Beyno;
+    font-weight: 300;
+    letter-spacing: 0.75rem;
+}
+
+#span-4-0{
+    font-size: 2.25rem;
+    font-family: Mohave;
+    font-weight: 200;
+    letter-spacing: 0.65rem;
+    color: #38CCFF;
+} */
 
 .left {
     background-image: linear-gradient(to bottom, #11111175, #11111175),
@@ -41,7 +96,7 @@ body {
 
 .right {
     flex: 1;
-    background: white;
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,10 +136,14 @@ button{
     padding: 12px;
     border: none;
     border-radius: 5px;
-    background: #38CCFF;
+    background: #38ccff;
     color: #01265D;
     font-weight: 600;
     cursor: pointer;
+}
+
+.btn:hover{
+    background: #05c1ff;
 }
 
 .or {

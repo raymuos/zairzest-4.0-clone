@@ -134,3 +134,32 @@ button:hover {
     border: 3px solid #38CCFF;
     color: #38CCFF;
 }
+
+/* Zen 4.0 part designing */
+.blue-text{
+    color: #38CCFF;
+}
+
+.italic-text{
+    font-style: oblique;
+}
+#zen-4-div{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#panda-img{
+    height: 500px;
+}
+
+#zen-4-text-div{
+    width: 500px;
+}
+
+#zen-4-heading{
+    font-size: 3em;
+    font-weight: 600;
+}
