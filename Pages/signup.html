@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Zairza</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Outfit;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left {
+      flex: 1;
+      background: url('your-forest-image.jpg') no-repeat center center/cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .left h1 {
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    .left p {
+      margin-top: 20px;
+      font-size: 1em;
+      max-width: 400px;
+    }
+
+    .right {
+      flex: 1;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-container {
+      width: 80%;
+      max-width: 400px;
+    }
+
+    .form-container h2 {
+      color: #38CCFF;
+      margin-bottom: 10px;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-container .small-text {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      width: 120.99999237060547;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background: #38CCFF;
+      color: #01265D;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .or {
+      text-align: center;
+      width: 15px;
+      height: 21px;
+      top: 569px;
+      left: 1061px;
+      margin: 15px 0;
+      color: #A8A8A8;
+    }
+
+    .google-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border: 1px solid #01265D;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      
+    }
+
+    .google-btn img {
+      width: 20px;
+      margin-right: 20px;
+    }
+
+    .signin-link {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+
+    .signin-link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .signin-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <h1>Enter the untamed wilderness with <br />ZAIRZA</h1>
+    <p>Release all your stress with the exciting Tech and Fun events in the most awaited fest - Zairzest 3.0 presented by Zairza.</p>
+  </div>
+  <div class="right">
+    <div class="form-container">
+      <h2>Become the Beast of the Cyber Forest</h2>
+      <p class="small-text">Sign in to get into Zairzest</p>
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="Registration No." />
+      <input type="email" placeholder="Email here" />
+      <input type="password" placeholder="*********" />
+      <p class="signin-link">Already a Member Yet? <a href="#">Sign in</a></p>
+      <button class="btn">Sign Up</button>
+      <p class="or">or</p>
+      <div class="google-btn">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google icon" />
+        Sign up with Google
+      </div>
+    </div>
+  </div>
+</body>
+</html>
