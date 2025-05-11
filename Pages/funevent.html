@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fun Events</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Outfit;
+      background-color: #0f0f0f;
+      color: #FFFFFF;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .event-card {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #333;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+    }
+
+    .event-card:hover {
+      transform: scale(1.02);
+    }
+
+    .event-image {
+      width: 344px;
+      height: 430px;
+      object-fit: cover;
+    }
+
+    .event-content {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+
+    .event-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .event-meta {
+      font-size: 0.9em;
+      color: #C5C5C5;
+      font-family: Gilroy-SemiBold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Fun Events</h1>
+
+  <div class="events-grid">
+    <div class="event-card">
+      <img src="../Public/images/a016761c8caaa0b0dd0cf3710c755060b429c9e6.jpg" alt="Treasure Hunt" class="event-image" />
+      <div class="event-content">
+        <div class="event-title">Treasure Hunt</div>
+        <div class="event-meta">Date & Time<br />Coming Soon</div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="../Public/images/1a1fcc02b1cea0bb2b3fed666cb8594d0a1f7864.jpg" alt="Jamming Night" class="event-image" />
+      <div class="event-content">
+        <div class="event-title">Jamming Night</div>
+        <div class="event-meta">Date & Time<br />Coming Soon</div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="../Public/images/8a2fa8bb13bfa098333145d753d57c1b8213aef0.jpg" alt="Paper Dance" class="event-image" />
+      <div class="event-content">
+        <div class="event-title">Paper Dance</div>
+        <div class="event-meta">Date & Time<br />Coming Soon</div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="../Public/images/61021722a9668d95d796a61e5d53702e775b293b.jpg" alt="Twister" class="event-image" />
+      <div class="event-content">
+        <div class="event-title">Twister</div>
+        <div class="event-meta">Date & Time<br />Coming Soon</div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="../Public/images/c178544ff5f40ef934dd32765a2662c9c4053c25.jpg" alt="PVP Gaming" class="event-image" />
+      <div class="event-content">
+        <div class="event-title">PVP Gaming</div>
+        <div class="event-meta">Date & Time<br />Coming Soon</div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="../Public/images/adcc21db387449d6a837b5f7e40131618648a0de.jpg" alt="Programmer Fun" class="event-image" />
+      <div class="event-content">
+        <div class="event-title">Programmer Fun</div>
+        <div class="event-meta">Date & Time<br />Coming Soon</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
