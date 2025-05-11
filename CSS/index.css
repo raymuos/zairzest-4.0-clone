@@ -113,11 +113,10 @@ button{
     outline: 0;
     padding: 0.8rem;
     font: inherit;
-    font-size: 1.25rem;
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
-
+    width: 10rem;
     transition: box-shadow 0.3s;
 }
 
@@ -183,3 +182,36 @@ button:hover {
     font-weight: 600;
 }
 
+/* ------------- Footer-designing -------------- */
+
+footer{
+    background-color: #1A1A1A; 
+    color: #D0D5DD ; 
+    padding: 75px 50px; 
+    font-family: Outfit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-footer{
+    align-self: flex-start; 
+    min-width: 250px;
+    font-size: 1.75rem;
+}
+
+.mid-footer, .bottom-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text-1{
+    max-width: 400px; 
+    font-size: 1rem;
+    font-weight: 500;
+}
