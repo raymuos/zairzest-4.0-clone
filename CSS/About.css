@@ -16,6 +16,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #38ccff #111;
 }
 
 body{
@@ -88,7 +90,7 @@ header{
 .imgs-div{
     display: flex;
     flex-flow: row wrap;
-    gap: 0;
+    gap: 10px;
     width: 60vw;
     margin-inline: auto;
     margin-block: 10vh;
@@ -96,7 +98,7 @@ header{
 
 .img-div{
     height: 300px;
-    width: 50%;
+    width: 49%;
     background-color: #007aff;
 }
 
