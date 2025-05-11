@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Outfit;
+    src: url(../Public/fonts/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Beyno;
+    src: url(../Public/fonts/BEYNO.ttf);
+}
+
+@font-face {
+    font-family: Mohave;
+    src: url(../Public/fonts/Mohave-VariableFont_wght.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Outfit;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+#left-div {
+    background-image: linear-gradient(to bottom, #11111175, #11111175),
+    url('../Public/images/4095f2aebf516787f155d0719b819679583330f3.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: min(200px, 15vw);
+    width: 63vw;
+}
+
+#left-heading{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+#left-text{
+    width: 70%;
+}
+
+#right-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    width: min(90%, 400px);
+}
+
+#form-heading{
+    color: #38ccff;
+    font-weight: 600;
+}
+
+input{
+    font: inherit;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #858585;
+}
+
+a{
+    color: #38ccff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover{
+    color: #007aff;
+}
+
+#signin-btn {
+    margin-top: 30px;
+    font: inherit;
+    align-self: center;
+    width: 120px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #38ccff;
+    color: #01265D;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#signin-btn:hover{
+    background: #05c1ff;
+}
