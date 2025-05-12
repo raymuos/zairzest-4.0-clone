@@ -7,6 +7,7 @@ export function EventsForYou(){
     <div class="events-container">
         <div class="event-card">
         <img src="Public/images/81eeae998eaf11e2a7342ec09194109b932b683e.jpg" alt="Tech Events">
+        <div class="overlay"></div>
         <div class="event-label">
             <h2>Tech Events</h2>
             <p>Click to view</p>
@@ -15,6 +16,7 @@ export function EventsForYou(){
 
         <div class="event-card">
         <img src="Public/images/6e5a1acbd43790bebd94048e10d91f33a4046ae8.jpg" alt="Fun Events">
+        <div class="overlay"></div>
         <div class="event-label">
             <h2>Fun Events</h2>
             <p>Click to view</p>

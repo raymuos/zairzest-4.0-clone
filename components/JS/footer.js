@@ -11,6 +11,7 @@ function getBasePath() {
   return "";
 }
 
+const base = getBasePath();
 
 export function Footer(){
 
