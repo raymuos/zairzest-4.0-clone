@@ -1,6 +1,6 @@
 function getBasePath() {
   const pathSegments = window.location.pathname.split('/');
-  const repoName = pathSegments[1]; // assumes /RepoName/...
+  const repoName = pathSegments[1];
   
   // If hosted on GitHub Pages, use repo name
   if (window.location.hostname.includes("github.io") && repoName) {
@@ -16,7 +16,7 @@ const base = getBasePath();
 export function Footer(){
 
     return `    
-    <footer>
+        <footer>
             
         <div class="top-footer">
             <h2 >Want to know <br>about us ?</h2>
@@ -25,15 +25,14 @@ export function Footer(){
             <p class="footer-text-1">
                 Come and know more about Zairza and join our community to experience even more amazing things.
             </p>
-            <div style="margin-bottom: 20px;">
-
-                <a href="#" style="margin: 0 8px;color: #38CCFF;"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" style="margin: 0 8px;color: #38CCFF;"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" style="margin: 0 8px;color: #38CCFF;"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#" style="margin: 0 8px;color: #38CCFF;"><i class="fa-solid fa-envelope"></i></a>
-                <a href="#" style="margin: 0 8px;color: #38CCFF;"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" style="margin: 0 8px;color: #38CCFF;"><i class="fa-brands fa-github"></i></a>
-            
+            <div id="links-div" style="margin-bottom: 20px;">
+                
+                <a class="links" href="#"><div class="circle-div"><i class="fa-brands fa-facebook-f"></i></div></a>
+                <a class="links" href="#"><div class="circle-div"><i class="fa-brands fa-x-twitter"></i></div></a>
+                <a class="links" href="#"><div class="circle-div"><i class="fa-brands fa-youtube"></i></div></a>
+                <a class="links" href="#"><div class="circle-div"><i class="fa-solid fa-envelope"></i></div></a>
+                <a class="links" href="#"><div class="circle-div"><i class="fa-brands fa-instagram"></i></div></a>
+                <a class="links" href="#"><div class="circle-div"><i class="fa-brands fa-github"></i></div></a>
             
             </div>
         </div>
@@ -44,10 +43,13 @@ export function Footer(){
                 +91 7205883336
             </p>
             <div>
-                <p style="display: flex; align-items: center; gap: 10px">Presented by <img src="${base}/Public/images/zairza-logo.webp" alt="Zairza Logo" width="40px" /></p>
+                <p style="display: flex; align-items: center; gap: 10px">
+                    Presented by <img src="../Public/images/zairza-logo.webp" alt="Zairza Logo" width="40px" />
+                </p>
             </div>
         </div>
             
     </footer>
+
 `
 }

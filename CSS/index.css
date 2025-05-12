@@ -97,6 +97,7 @@ button:hover {
 .italic-text{
     font-style: oblique;
 }
+
 #zen-4-div{
     margin-top: 10vh;
     display: flex;
@@ -136,6 +137,3 @@ button:hover {
     font-size: 3em;
     font-weight: 600;
 }
-
-/* ------------- Footer-designing -------------- */
-

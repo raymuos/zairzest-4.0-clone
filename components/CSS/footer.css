@@ -29,3 +29,29 @@ footer{
     font-size: 1rem;
     font-weight: 500;
 }
+
+.circle-div{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #38CCFF;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.circle-div:hover{
+    transform: scale(1.2);
+}
+
+#links-div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links{
+    color: #111;
+    text-decoration: none;
+}

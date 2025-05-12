@@ -53,11 +53,17 @@ p.description {
   left: 20px;
   text-align: left;
 }
-.event-label h2 {
+ .event-label h2 {
   margin: 0;
   font-size: 2.5rem;
   font-weight: 600;
 }
+
+a .event-label h2{
+  text-decoration: none;
+  color: #fff;
+}
+
 .event-label p {
   margin: 5px 0 0;
   font-size: 1em;
