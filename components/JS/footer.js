@@ -43,7 +43,7 @@ export function Footer(){
                 +91 7205883336
             </p>
             <div>
-                <p style="display: flex; align-items: center; gap: 10px">Presented by <img src="Public/images/zairza-logo.webp" alt="Zairza Logo" width="40px" /></p>
+                <p style="display: flex; align-items: center; gap: 10px">Presented by <img src="${base}/Public/images/zairza-logo.webp" alt="Zairza Logo" width="40px" /></p>
             </div>
         </div>
             
