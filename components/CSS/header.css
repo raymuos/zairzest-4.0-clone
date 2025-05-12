@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Outfit;
+    src: url(../../Public/fonts/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Beyno;
+    src: url(../../Public/fonts/BEYNO.ttf);
+}
+
+@font-face {
+    font-family: Mohave;
+    src: url(../../Public/fonts/Mohave-VariableFont_wght.ttf);
+}
+
+header{
+    background: #121212;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 80px;
+    height: max(10vh, 75px);
+}
+
+#menu-div{
+    display: flex;
+    gap: 60px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+#menu-div a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu-div a:hover, a:focus {
+    color: #007aff;
+}
+
+#zairzest-span{
+    font-size: 2.25rem;
+    font-family: Beyno;
+    font-weight: 300;
+    letter-spacing: 0.75rem;
+}
+
+#span-4-0{
+    font-size: 2.25rem;
+    font-family: Mohave;
+    font-weight: 200;
+    letter-spacing: 0.65rem;
+    color: #38CCFF;
+}
