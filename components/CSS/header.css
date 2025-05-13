@@ -31,22 +31,23 @@ header{
 #menu-div{
     display: flex;
     gap: 60px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 
-#menu-div a{
+a{
     color: #fff;
     text-decoration: none;
 }
 
-#menu-div a:hover, a:focus {
-    color: #007aff;
+a:hover, a:focus {
+    color: #38CCFF;
 }
 
 #zairzest-span{
     font-size: 2.25rem;
     font-family: Beyno;
+    color: #fff;
     font-weight: 300;
     letter-spacing: 0.75rem;
 }
@@ -57,4 +58,48 @@ header{
     font-weight: 200;
     letter-spacing: 0.65rem;
     color: #38CCFF;
+}
+
+/* ------------------------ Responsive Menu Bar Icon Stuff -------------------------- */
+
+#menu-bar-icon{
+    display: none;
+}
+
+#menu-sidebar{
+    display: none;
+}
+
+
+@media(max-width:1000px){
+
+    #menu-div{
+        display: none;
+    }
+    #menu-bar-icon{
+        display: block;
+    }
+
+    #menu-sidebar{
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+
+        font-size: 1.3rem;
+        font-weight: 300;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+
+        width: 100vw;
+        height: 100vh;
+        padding: 50px;
+
+        background-color: #88888822;
+        backdrop-filter: blur(6px);
+    }
 }

@@ -37,3 +37,14 @@
     transform: scale(1.03);
     box-shadow: 0 0 20px #38ccff88;
 }
+
+#username{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#user-id{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #38ccff;
+}
