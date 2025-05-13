@@ -1,0 +1,39 @@
+
+#user-div{
+    width: 100%;
+    min-height: 90vh;
+    margin-top: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../Public/images/crazy-pandas.jpg");
+    background-size: cover;
+}
+
+.user-img{
+    border-radius: 12px;
+}
+
+#user-card{
+    margin-inline: auto;
+    width: 350px;
+    padding: 30px;
+    background-image: 
+    linear-gradient(to bottom, #38ccff88, #38ccff00),
+    linear-gradient(#111, #111);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#user-card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #38ccff88;
+}

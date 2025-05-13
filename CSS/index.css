@@ -15,7 +15,7 @@ body{
     font-family: Outfit;
     background-color: #111111;
     color: #fff;
-    height: 200vh;
+    min-height: 125vh;
 }
 
 ::selection{
