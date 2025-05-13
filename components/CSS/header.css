@@ -102,4 +102,8 @@ a:hover, a:focus {
         background-color: #88888822;
         backdrop-filter: blur(6px);
     }
+
+    #close-menu-icon{
+        align-self: flex-end;
+    }
 }

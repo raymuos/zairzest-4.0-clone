@@ -30,9 +30,9 @@ export function Header(){
             <span id="zairzest-span">ZAIRZEST </span> <span id="span-4-0"> 4.0</span>
         </a>
         <div id="menu-div">
-            <a href="/Pages/About.html">About Us</a>
-            <a href="/Pages/Register.html">Register</a>
-            <a href="/Pages/Login.html">Sign In</a>
+            <a href="${base}/Pages/About.html">About Us</a>
+            <a href="${base}/Pages/Register.html">Register</a>
+            <a href="${base}/Pages/Login.html">Sign In</a>
         </div>
 
         <p id="menu-bar-icon">
@@ -47,9 +47,9 @@ export function Header(){
                     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
                 </svg>
             </p>
-            <a href="/Pages/About.html">About Us</a>
-            <a href="/Pages/Register.html">Register</a>
-            <a href="/Pages/Login.html">Sign In</a>
+            <a href="${base}/Pages/About.html">About Us</a>
+            <a href="${base}/Pages/Register.html">Register</a>
+            <a href="${base}/Pages/Login.html">Sign In</a>
         </div>
 
     </header>
