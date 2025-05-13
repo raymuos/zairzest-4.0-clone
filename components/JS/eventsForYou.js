@@ -1,3 +1,19 @@
+function getBasePath() {
+  const pathSegments = window.location.pathname.split('/');
+  const repoName = pathSegments[1];
+  
+  // If hosted on GitHub Pages, use repo name
+  if (window.location.hostname.includes("github.io") && repoName) {
+    return `/${repoName}`;
+  }
+
+  // Else, local or root deployment
+  return "";
+}
+
+const base = getBasePath();
+
+
 export function EventsForYou(){
 
     return `
@@ -5,7 +21,7 @@ export function EventsForYou(){
     <p class="description">Everything has been made simple for you to scroll around and get the most out of the options available.</p>
 
     <div class="events-container">
-        <a href="/Pages/TechEvents.html"><div class="event-card">
+        <a href="${base}/Pages/TechEvents.html"><div class="event-card">
         <img src="Public/images/81eeae998eaf11e2a7342ec09194109b932b683e.jpg" alt="Tech Events">
         <div class="overlay"></div>
         <div class="event-label">
@@ -14,7 +30,7 @@ export function EventsForYou(){
         </div>
         </div></a>
 
-        <a href="/Pages/FunEvents.html"><div class="event-card">
+        <a href="${base}/Pages/FunEvents.html"><div class="event-card">
         <img src="Public/images/6e5a1acbd43790bebd94048e10d91f33a4046ae8.jpg" alt="Fun Events">
         <div class="overlay"></div>
         <div class="event-label">
