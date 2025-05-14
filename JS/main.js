@@ -15,11 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     spinners.forEach( elemento => observer.observe(elemento));
     
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const spinners = document.querySelectorAll(".slideX");
-    const observer = new IntersectionObserver( (entries, obs) => {
+    const spinners1 = document.querySelectorAll(".slideX");
+    const observer1 = new IntersectionObserver( (entries, obs) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting){
                 entry.target.classList.add('animate');
@@ -28,13 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     
     })
-    spinners.forEach( elemento => observer.observe(elemento));
+    spinners1.forEach( elemento => observer1.observe(elemento));
     
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const spinners = document.querySelectorAll(".slideY");
-    const observer = new IntersectionObserver( (entries, obs) => {
+    const spinners2 = document.querySelectorAll(".slideY");
+    const observer2 = new IntersectionObserver( (entries, obs) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting){
                 entry.target.classList.add('animate');
@@ -43,15 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     
     })
-    spinners.forEach( elemento => observer.observe(elemento));
+    spinners2.forEach( elemento => observer2.observe(elemento));
     
 });
-
-
-
 
 document.body.innerHTML += Header();
 document.body.innerHTML += Footer();
+
 
 document.getElementById("menu-bar-icon").onclick = () => showSidebar();
 document.getElementById("close-menu-icon").onclick = () => hideSidebar();
