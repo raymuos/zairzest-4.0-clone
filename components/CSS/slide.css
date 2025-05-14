@@ -1,0 +1,45 @@
+.slideX{
+    animation: slideX 1s ease;
+    animation-play-state: paused;
+}
+
+.slideX.animate{
+    animation-play-state: running;
+}
+
+@keyframes slideX {
+    0%{
+        opacity: 0;
+        blur: 6px;
+        transform:translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        blur: 0px;
+        transform:translateX(0px);
+    }
+}
+
+.slideY{
+    animation: slideY 1s ease;
+    animation-play-state: paused;
+}
+
+.slideY.animate{
+    animation-play-state: running;
+}
+
+@keyframes slideY {
+    0%{
+        opacity: 0;
+        blur: 6px;
+        transform:translateY(150px);
+    }
+
+    100%{
+        opacity: 1;
+        blur: 0px;
+        transform:translateY(0px);
+    }
+}

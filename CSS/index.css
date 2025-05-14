@@ -11,6 +11,10 @@
     scrollbar-color: #38ccff #111;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: Outfit;
     background-color: #111111;
@@ -132,8 +136,8 @@ body{
 
 #music-wrapper{
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 20px;
+    right: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +167,7 @@ body{
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0);
     z-index: -1;
-    animation: pulse 1s infinite;
+    animation: pulse 1s infinite linear;
     opacity: 0;
     cursor: pointer;
     pointer-events: none;

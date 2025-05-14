@@ -11,26 +11,27 @@
     <link rel="stylesheet" href="components/CSS/eventsforyou.css">
     <link rel="stylesheet" href="components/CSS/footer.css">
 
+    <link rel="stylesheet" href="components/CSS/slide.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 <body>
     <div id="hero-back-div">
         <div class="hero-div">
-            <p id="hero-heading">Hunt the Future in the Cyber Forest</p>
-            <div id="hero-btns-div">
-                <button id="exploreBtn" class="btn btn-type-2" onclick="">Explore Events</button>
+            <p id="hero-heading" class="slideX">Hunt the Future in the Cyber Forest</p>
+            <div id="hero-btns-div" class="slideX">
+                <button id="exploreBtn" class="btn btn-type-2" onclick="location.href='#events-for-you'">Explore Events</button>
                 <button id="registerBtn" class="btn btn-type-1" onclick="location.href='Pages/Register.html'">Register Now</button>
             </div>
         </div>
     </div>
 
     <div id="zen-4-div">
-        <div id="panda-pita">
+        <div id="panda-pita" class="slideY">
             <img id="panda-img" src="Public/images/panda-man-complete.webp" alt="Man on Angry Panda">
-            <!-- <div id="holo-display"></div> -->
         </div>
-        <div id="zen-4-text-div">
+        <div id="zen-4-text-div" class="slideY">
             <p id="zen-4-heading"><span class="blue-text">Zen 4.0 : </span>Your Guide in The Cyber Wild!</p>
             <p id="zen-4-text">
                 <span class="italic-text">‘To forge the future, we must first innovate it.’</span><br>
@@ -44,7 +45,7 @@
         </div>
     </div>
 
-    <h1>Events for you</h1>
+    <h1 id="events-for-you">Events for you</h1>
     <p class="description">Everything has been made simple for you to scroll around and get the most out of the options available.</p>
 
     <div class="events-container">
