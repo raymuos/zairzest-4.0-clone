@@ -26,7 +26,7 @@ export function Header(){
 
     return `
         <header>
-        <a href="/index.html">
+        <a href="${base}/index.html">
             <span id="zairzest-span">ZAIRZEST </span> <span id="span-4-0"> 4.0</span>
         </a>
         <div id="menu-div">

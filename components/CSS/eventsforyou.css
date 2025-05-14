@@ -70,26 +70,3 @@ a .event-label h2{
   font-size: 1em;
   color: #e0e0e0;
 }
-
-/* -----------------------------ANIMATION CATEGORY------------------------------- */
-
-.spin{
-  animation: spin 1s;
-  animation-play-state: paused;
-}
-
-.spin.animate{
-  animation-play-state: running;
-}
-
-@keyframes spin{
-  0%{
-    opacity: 0;
-    transform: rotateY(270deg);
-  }
-
-  100%{
-    opacity: 1;
-    transform: rotateY(360deg);
-  }
-}
