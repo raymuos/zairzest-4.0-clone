@@ -99,7 +99,7 @@ a:hover, a:focus {
         height: 100vh;
         padding: 50px;
 
-        background-color: #88888822;
+        background-color: #111111;
         backdrop-filter: blur(6px);
     }
 

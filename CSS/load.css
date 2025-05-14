@@ -1,0 +1,38 @@
+body {
+      margin: 0;
+      background: #000;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px;
+    }
+
+    .loader div {
+      width: 10px;
+      height: 10px;
+      background-color: #3fa9f5;
+      animation: blink 1.2s infinite ease-in-out;
+    }
+
+    .loader div:nth-child(1) { animation-delay: 0s; }
+    .loader div:nth-child(2) { animation-delay: 0.2s; }
+    .loader div:nth-child(3) { animation-delay: 0.4s; }
+    .loader div:nth-child(4) { animation-delay: 0.5s; }
+    .loader div:nth-child(5) { animation-delay: 1s;background-color: #050505; animation: none;  }  
+    .loader div:nth-child(6) { animation-delay: 1.5s; }
+    .loader div:nth-child(7) { animation-delay: 2s; }
+    .loader div:nth-child(8) { animation-delay: 2.5s; }
+    .loader div:nth-child(9) { animation-delay: 3s; }
+
+    @keyframes blink {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
