@@ -19,8 +19,8 @@
         <div class="hero-div">
             <p id="hero-heading">Hunt the Future in the Cyber Forest</p>
             <div id="hero-btns-div">
-                <button id="exploreBtn" class="btn-type-2" onclick="">Explore Events</button>
-                <button id="registerBtn" class="btn-type-1" onclick="location.href='Pages/Register.html'">Register Now</button>
+                <button id="exploreBtn" class="btn btn-type-2" onclick="">Explore Events</button>
+                <button id="registerBtn" class="btn btn-type-1" onclick="location.href='Pages/Register.html'">Register Now</button>
             </div>
         </div>
     </div>
@@ -68,7 +68,22 @@
     </div></a>
 
 
-    <button id="music-btn"></button>
+    <audio id="bgmusic" loop>
+        <source src="/Public/audio/KORDHELL - MURDER IN MY MIND [Extended].mp3" type="audio/mp3">
+    </audio>
+
+    <div id="music-wrapper">
+        <div id="music-pulse"></div>
+        <button id="music-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#38ccff">
+                <path d="M320-203v-560l440 280-440 280Zm60-280Zm0 171 269-171-269-171v342Z"/>
+            </svg>
+        </button>
+    </div>
+    
+
+
     <script type="module" src="JS/main.js"></script>
+    <script type="module" src="components/JS/button.js"></script>
 </body>
 </html>
