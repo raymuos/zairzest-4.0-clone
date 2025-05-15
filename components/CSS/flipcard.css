@@ -1,38 +1,59 @@
 .event-card{
     display: block;
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
+    perspective: 1000px;
 }
 
 .card-inner{
     position: relative;
     width: 100%;
     height: 100%;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    border: 1px solid #333;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
 
 .event-front, .event-back{
-    position: absolute;
+  position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.event-front{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  font-size: 24px;
-  background-color: lightblue;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  background-color: #1a1a1a;
 }
 
 .event-back {
+  background: linear-gradient(to bottom, hsl(195, 100%, 31%), #111);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.2rem;
   transform: rotateY(180deg);
-  background-color: lightcoral;
 }
 
-#flip-toggle:checked + .event-card .card-inner {
+#flip-toggle-1:checked + .event-card .card-inner,
+#flip-toggle-2:checked + .event-card .card-inner ,
+#flip-toggle-3:checked + .event-card .card-inner ,
+#flip-toggle-4:checked + .event-card .card-inner ,
+#flip-toggle-5:checked + .event-card .card-inner ,
+#flip-toggle-6:checked + .event-card .card-inner {
   transform: rotateY(180deg);
 }
