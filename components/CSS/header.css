@@ -71,7 +71,7 @@ a:hover, a:focus {
 }
 
 
-@media(max-width:1000px){
+@media(max-width:900px){
 
     #menu-div{
         display: none;
@@ -87,7 +87,7 @@ a:hover, a:focus {
         align-items: flex-start;
         gap: 30px;
 
-        font-size: 1.3rem;
+        font-size: 2.5rem;
         font-weight: 300;
 
         position: fixed;
@@ -105,5 +105,18 @@ a:hover, a:focus {
 
     #close-menu-icon{
         align-self: flex-end;
+    }
+}
+
+@media (max-width: 768px) {
+    #zairzest-span, #span-4-0{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header{
+        padding-inline: 40px;
     }
 }

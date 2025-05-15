@@ -21,6 +21,8 @@
     }
 }
 
+
+
 .slideY{
     animation: slideY 1s ease;
     animation-play-state: paused;

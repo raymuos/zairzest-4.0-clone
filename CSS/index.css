@@ -27,7 +27,7 @@ body{
     color: white;
 }
 
-/* ---------Hero-div------------------- */
+/* ---------------------------------------------Hero-div-------------------------------------- */
 
 #hero-back-div{
     background-image:
@@ -51,9 +51,8 @@ body{
     justify-content: center;
     align-items: flex-start;
     gap: 3.5rem;
-    padding: 50px;
-    border-radius: 5px;
 }
+
 #hero-heading{
     font-size: 3rem;
     font-weight: 600;
@@ -94,7 +93,7 @@ body{
     color: #38CCFF;
 }
 
-/* Zen 4.0 part designing */
+/*---------------------------------------Zen 4.0 part designing-------------------------------- */
 .blue-text{
     color: #38CCFF;
 }
@@ -108,7 +107,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 100px;
+    padding: 50px;
 }
 #panda-pita{
     display: flex;
@@ -130,4 +131,120 @@ body{
 #zen-4-heading{
     font-size: 3em;
     font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* -------------------------------EVENTSSSSSSSSSS FORRRR YOUUUUUU------------------------------------- */
+
+#events-for-you {
+  margin-top: 10vh;
+  font-size: 3em;
+  color: #38ccff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+p.description {
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.events-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 75px;
+  margin-bottom: 15vh;
+}
+.event-card {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.1);
+}
+.event-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top right, #11111188, #11111100);
+}
+.event-label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+}
+ .event-label h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+a .event-label h2{
+  text-decoration: none;
+  color: #fff;
+}
+
+.event-label p {
+  margin: 5px 0 0;
+  font-size: 1em;
+  color: #e0e0e0;
+}
+
+
+/* ------------------------------MEDIAAAAA QUERIESSSSSSSSSSS------------------------------- */
+@media (max-width: 1024px) {
+
+.hero-div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+#hero-heading{
+    text-align: center;
+}
+
+#hero-back-div{
+    align-items: center;
+}
+
+}
+
+@media (max-width: 768px) {
+
+    #hero-back-div{
+        height: 75vh;
+    }
+
+    #panda-img{
+        height: 450px;
+    }
+
+    #zen-4-heading{
+        text-align: center;
+    }
+
+    .event-card{
+        width: 400px;
+    }
 }

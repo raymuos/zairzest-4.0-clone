@@ -13,15 +13,17 @@ footer{
 
 .top-footer{
     align-self: flex-start; 
-    min-width: 250px;
+    width: 250px;
     font-size: 1.75rem;
 }
 
 .mid-footer, .bottom-footer{
     display: flex;
     width: 100%;
+    gap: 30px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-text-1{
@@ -56,6 +58,28 @@ footer{
     text-decoration: none;
 }
 
+#zairza-logo-div{
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+}
+
 footer a:hover{
     color: #111;
+}
+
+@media (max-width: 768px){
+
+    .top-footer{
+        align-self: right;
+        width: 100%;
+        text-align: center;
+        margin-inline: auto ;
+        font-size: 1.75rem;
+    }
+
+    .mid-footer, .bottom-footer{
+        flex-direction: column;
+    }
+
 }
