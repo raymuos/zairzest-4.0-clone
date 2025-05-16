@@ -27,7 +27,7 @@ body{
     color: white;
 }
 
-/* ---------Hero-div------------------- */
+/* ---------------------------------------------Hero-div-------------------------------------- */
 
 #hero-back-div{
     background-image:
@@ -51,9 +51,8 @@ body{
     justify-content: center;
     align-items: flex-start;
     gap: 3.5rem;
-    padding: 50px;
-    border-radius: 5px;
 }
+
 #hero-heading{
     font-size: 3rem;
     font-weight: 600;
@@ -94,7 +93,7 @@ body{
     color: #38CCFF;
 }
 
-/* Zen 4.0 part designing */
+/*---------------------------------------Zen 4.0 part designing-------------------------------- */
 .blue-text{
     color: #38CCFF;
 }
@@ -108,7 +107,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 100px;
+    padding: 50px;
 }
 #panda-pita{
     display: flex;
@@ -130,57 +131,146 @@ body{
 #zen-4-heading{
     font-size: 3em;
     font-weight: 600;
+    margin-bottom: 25px;
 }
 
-/* music-button */
+/* -------------------------------EVENTSSSSSSSSSS FORRRR YOUUUUUU------------------------------------- */
 
-#music-wrapper{
-    position: fixed;
-    bottom: 20px;
-    right: 100px;
+#events-for-you {
+  margin-top: 10vh;
+  font-size: 3em;
+  color: #38ccff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+p.description {
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.events-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 75px;
+  margin-bottom: 15vh;
+}
+.event-select-card {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.event-select-card:hover {
+  transform: scale(1.1);
+}
+.event-select-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top right, #11111188, #11111100);
+}
+.event-label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+}
+ .event-label h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+a .event-label h2{
+  text-decoration: none;
+  color: #fff;
+}
+
+.event-label p {
+  margin: 5px 0 0;
+  font-size: 1em;
+  color: #e0e0e0;
+}
+
+
+/* ------------------------------MEDIAAAAA QUERIESSSSSSSSSSS------------------------------- */
+@media (max-width: 1024px) {
+
+.hero-div{
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    gap: 3.5rem;
 }
-#music-btn{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    background-color: #2a2a2a;
-    z-index: 100;
 
-    display: flex;
-    justify-content: center;
+#hero-heading{
+    text-align: center;
+}
+
+#hero-back-div{
     align-items: center;
+}
 
 }
 
-#music-pulse{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200%;
-    height: 200%;
-    background: #38ccff;
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    z-index: -1;
-    animation: pulse 1s infinite linear;
-    opacity: 0;
-    cursor: pointer;
-    pointer-events: none;
-}
+@media (max-width: 768px) {
 
-@keyframes pulse {
-    0%{
-        transform: translate(-50%, -50%) scale(0.5);
-        opacity: 1;
+    .event-select-card{
+        width: 75vw;
     }
 
-    100%{
-        transform: translate(-50%, -50%) scale(0.75);
-        opacity: 0;
+    #hero-btns-div{
+        flex-flow: column wrap;
     }
+
+    #hero-back-div{
+        padding-inline: 4vw ;
+    }
+    
+    .btn{
+        width: 50vw;
+    }
+
+    #zen-4-div{
+        padding: 0;
+    }
+
+    #panda-pita{
+        width: 100%;
+        gap: 0;
+        padding: 0;
+        flex-flow: column nowrap;
+    }
+
+    #panda-img{
+        width: 100%;
+        height: auto;
+    }
+
+    #zen-4-heading{
+        text-align: center;
+    }
+
+    #zen-4-text-div{
+        padding-inline: 2rem ;
+    }
+
+    
 }

@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-inline: min(200px, 15vw);
+    padding-inline: min(200px, 10vw);
     width: 63vw;
 }
 
@@ -100,4 +100,24 @@ a:hover{
 
 #signin-btn:hover{
     background: #05c1ff;
+}
+
+@media (max-width: 1024px) {
+
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+    #left-div{
+        display: none;
+    }
+
+    p.signin-link.small-text{
+
+        margin-top: 0px;
+    }
+
+    .btns-div{
+        margin-top: 20px;
+    }
 }

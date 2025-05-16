@@ -33,7 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 200px;
+    padding-left: 10vw;
     width: 63vw;
 }
 
@@ -151,4 +151,18 @@ button{
     align-items: center;
     gap: 20px;
     margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+    .left{
+        display: none;
+    }
+
+    p.signin-link.small-text{
+        margin-top: 0px;
+    }
+
+    .btns-div{
+        margin-top: 20px;
+    }
 }

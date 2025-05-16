@@ -12,59 +12,32 @@ body {
       height: max-content;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 3px;
+      gap: 2.5px;
     }
-
-    /* .loader div {
-      width: 20px;
-      height: 20px;
-      background-color: #3fa9f5;
-      animation: blink 1.2s infinite ease-in-out;
-    }
-
-    .loader div:nth-child(1) { animation-delay: 0s; }
-    .loader div:nth-child(2) { animation-delay: 0.2s; }
-    .loader div:nth-child(3) { animation-delay: 0.4s; }
-    .loader div:nth-child(4) { animation-delay: 0.5s; }
-    .loader div:nth-child(5) { animation-delay: 1s;background-color: #050505; animation: none;  }  
-    .loader div:nth-child(6) { animation-delay: 1.5s; }
-    .loader div:nth-child(7) { animation-delay: 2s; }
-    .loader div:nth-child(8) { animation-delay: 2.5s; }
-    .loader div:nth-child(9) { animation-delay: 3s; }
-
-    @keyframes blink {
-      0%, 100% { opacity: 0.2; }
-      50% { opacity: 1; }
-    } */
-
-
 
     .loader div {
       width: 16px;
       height: 16px;
-      background-color: grey;
-      opacity : 0.3 ;
-      /* animation: blink 1.2s infinite ease-in-out; */
-    }
-     @keyframes rotateBlue {
-      0% { background-color: #2fb8f2; opacity: 1; }
-      11.11% { background-color: rgb(55, 118, 137); opacity: 0.3; }
-      100% { background-color: rgb(55, 118, 137); opacity: 0.3; }
+      background-color:#577c9b;
+      animation: blink 1.2s infinite ease-in-out;
     }
 
-    /* Apply staggered animation to each box except center */
-    .loader div:nth-child(1) { animation: rotateBlue 1.5s infinite; animation-delay: 0s; }
-.loader div:nth-child(2) { animation: rotateBlue 1.5s infinite; animation-delay: 0.1875s; }
-.loader div:nth-child(3) { animation: rotateBlue 1.5s infinite; animation-delay: 0.375s; }
-.loader div:nth-child(6) { animation: rotateBlue 1.5s infinite; animation-delay: 0.5625s; }
-.loader div:nth-child(9) { animation: rotateBlue 1.5s infinite; animation-delay: 0.75s; }
-.loader div:nth-child(8) { animation: rotateBlue 1.5s infinite; animation-delay: 0.9375s; }
-.loader div:nth-child(7) { animation: rotateBlue 1.5s infinite; animation-delay: 1.125s; }
-.loader div:nth-child(4) { animation: rotateBlue 1.5s infinite; animation-delay: 1.3125s; }
-
-
-    /* Center block stays constant grey */
-    .loader div:nth-child(5) {
-      background-color: #111;
-      opacity: 0.5;
+   .loader div:nth-child(1) { animation-delay: 0s; }
+   .loader div:nth-child(2) { animation-delay: 0.15s; }
+   .loader div:nth-child(3) { animation-delay: 0.3s; }
+   .loader div:nth-child(6) { animation-delay: 0.45s; }
+   .loader div:nth-child(9) { animation-delay: 0.6s; }
+   .loader div:nth-child(8) { animation-delay: 0.75s; }
+   .loader div:nth-child(7) { animation-delay: 0.9s; }
+   .loader div:nth-child(4) { animation-delay: 1.05s; }
+    
+    .loader div:nth-child(5) { background-color: #050505; animation: none;  }  
+   
+    @keyframes blink {
+      0% { background-color: #577c9b;}
+      49.9% { background-color: #577c9b;}
+       50% { background-color: #0dceff }
+       75% { background-color: #577c9b;}
+      100% {  background-color: #577c9b;}
+     
     }

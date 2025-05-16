@@ -35,16 +35,18 @@ body{
 
 .imgs-div{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
     gap: 10px;
-    width: 60vw;
+    width: 95vw;
     margin-inline: auto;
     margin-block: 10vh;
 }
 
 .img-div{
     height: 300px;
-    width: 49%;
+    width: 500px;
     background-color: #1a1a1a;
 }
 
@@ -71,4 +73,24 @@ body{
 
 .blue-text{
     color: #38CCFF;
+}
+
+@media (max-width: 1024px) {
+
+    .about-heading{
+        font-size: 3.3rem;
+    }
+
+    .img-div{
+        height: 225px;
+        width: 375px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .about-text{
+        padding-inline: 10vw;
+    }
+    
 }

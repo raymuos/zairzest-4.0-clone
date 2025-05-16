@@ -1,12 +1,5 @@
 
 /* -------------------------TECH EVENTS DESIGNING-------------------------- */
-
-#tech-heading{
-    margin-top: 20vh;
-    font-size: 4rem;
-    font-weight: 600;
-}
-
  body {
       margin-top: 10vh;
       font-family: Outfit;
@@ -30,19 +23,10 @@
     }
 
     .event-card {
-      background-color: #1a1a1a;
+      background-color: #00000000;
       border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid #333;
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-      transition: transform 0.2s ease;
-    }
-
-    .event-card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 20px #38ccff88;
+      overflow:visible ;
+      min-height: 500px;
     }
 
     .event-image {

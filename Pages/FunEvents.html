@@ -9,66 +9,153 @@
   <link rel="stylesheet" href="../CSS/FunEvents.css">
   
   <link rel="stylesheet" href="../components/CSS/header.css">
+  <link rel="stylesheet" href="../components/CSS/slide.css">
   <link rel="stylesheet" href="../components/CSS/footer.css">
+  <link rel="stylesheet" href="../components/CSS/flipcard.css">
+  <link rel="stylesheet" href="../components/CSS/button.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 <body>
 
-  <h1><span class="blue-text">Fun</span> Events</h1>
+  <h1 class="slideX"><span class="blue-text">Fun</span> Events</h1>
 
   <div class="events-grid">
-    <div class="event-card">
-      <img src="../Public/images/a016761c8caaa0b0dd0cf3710c755060b429c9e6.jpg" alt="Treasure Hunt" class="event-image" />
-      <div class="event-content">
-        <div class="event-title">Treasure Hunt</div>
-        <div class="event-meta">Date & Time<br />Coming Soon</div>
-      </div>
-    </div>
+    <input type="checkbox" id="flip-toggle-1" hidden> 
+        <label for="flip-toggle-1" class="event-card slideY">
+          <div class="card-inner">
+            <div class="event-front">
+              <img src="../Public/images/treasure-hunt.jpg" alt="Treasure Hunt" class="event-image" />
+              <div class="event-content">
+              <div class="event-title">Treasure Hunt</div>
+              <div class="event-meta">Date & Time<br>Coming Soon</div>
+              </div>
+            </div>
+            <div class="event-back">
+              Treasure Hunt is a thrilling, tech-themed competition where teams 
+              of 8 solve riddles and tech-related puzzles to uncover clues leading to the next location. 
+              Racing against other teams, participants must think fast and work together to reach the 
+              final surprise destination. The team that arrives first wins the prize.
+            </div>
+          </div>
+        </label>
 
-    <div class="event-card">
-      <img src="../Public/images/1a1fcc02b1cea0bb2b3fed666cb8594d0a1f7864.jpg" alt="Jamming Night" class="event-image" />
-      <div class="event-content">
-        <div class="event-title">Jamming Night</div>
-        <div class="event-meta">Date & Time<br />Coming Soon</div>
-      </div>
-    </div>
+        <input type="checkbox" id="flip-toggle-2" hidden> 
+        <label for="flip-toggle-2" class="event-card slideY">
+          <div class="card-inner">
+            <div class="event-front">
+              <img src="../Public/images/jamming-night.jpg" alt="Jamming Night" class="event-image" />
+              <div class="event-content">
+              <div class="event-title">Jamming Night</div>
+              <div class="event-meta">Date & Time<br>Coming Soon</div>
+              </div>
+            </div>
+            <div class="event-back">
+              Groove to the Beat at Dance Night! Join us for an electrifying evening of live music and dance, 
+              where enthusiasts of all styles can showcase their moves and connect with fellow dancers. 
+              Bring your friends and dance the night away!
+            </div>
+          </div>
+        </label>
 
-    <div class="event-card">
-      <img src="../Public/images/8a2fa8bb13bfa098333145d753d57c1b8213aef0.jpg" alt="Paper Dance" class="event-image" />
-      <div class="event-content">
-        <div class="event-title">Paper Dance</div>
-        <div class="event-meta">Date & Time<br />Coming Soon</div>
-      </div>
-    </div>
+        <input type="checkbox" id="flip-toggle-3" hidden> 
+        <label for="flip-toggle-3" class="event-card slideY">
+          <div class="card-inner">
 
-    <div class="event-card">
-      <img src="../Public/images/61021722a9668d95d796a61e5d53702e775b293b.jpg" alt="Twister" class="event-image" />
-      <div class="event-content">
-        <div class="event-title">Twister</div>
-        <div class="event-meta">Date & Time<br />Coming Soon</div>
-      </div>
-    </div>
+            <div class="event-front">
+              <img src="../Public/images/paper-dance.jpg" alt="Paper Dance" class="event-image" />
+              <div class="event-content">
+              <div class="event-title">Paper Dance</div>
+              <div class="event-meta">Date & Time<br>Coming Soon</div>
+              </div>
+            </div>
 
-    <div class="event-card">
-      <img src="../Public/images/c178544ff5f40ef934dd32765a2662c9c4053c25.jpg" alt="PVP Gaming" class="event-image" />
-      <div class="event-content">
-        <div class="event-title">PVP Gaming</div>
-        <div class="event-meta">Date & Time<br />Coming Soon</div>
-      </div>
-    </div>
+            <div class="event-back">
+              Paper Dance is an engaging event where participants pair up to test their balance and teamwork. 
+              The challenge involves dancing on a piece of paper that folds with each step. The winning pairs are 
+              those who can stay on the paper until the final fold. This thrilling competition combines grace, 
+              balance, and collaboration, making it a fun and interactive experience for everyone involved.
+            </div>
 
-    <div class="event-card">
-      <img src="../Public/images/adcc21db387449d6a837b5f7e40131618648a0de.jpg" alt="Programemer" class="event-image" />
-      <div class="event-content">
-        <div class="event-title">Programemer</div>
-        <div class="event-meta">Date & Time<br />Coming Soon</div>
-      </div>
-    </div>
+          </div>
+        </label>
+
+        <input type="checkbox" id="flip-toggle-4" hidden> 
+        <label for="flip-toggle-4" class="event-card slideY">
+          <div class="card-inner">
+            <div class="event-front">
+              <img src="../Public/images/twister.jpg" alt="Twister" class="event-image" />
+              <div class="event-content">
+              <div class="event-title">Twister</div>
+              <div class="event-meta">Date & Time<br>Coming Soon</div>
+              </div>
+            </div>
+            <div class="event-back">
+              Twister is a fun game where players place hands and feet on colors chosen by a spinner. 
+              As they twist into awkward positions to avoid overlapping, anyone who falls or touches the 
+              mat with an elbow or knee is out. Get ready for unpredictable fun!
+            </div>
+          </div>
+        </label>
+
+        <input type="checkbox" id="flip-toggle-5" hidden> 
+        <label for="flip-toggle-5" class="event-card slideY">
+          <div class="card-inner">
+            <div class="event-front">
+              <img src="../Public/images/pvp-wars.jpg" alt="PVP Gaming" class="event-image" />
+              <div class="event-content">
+              <div class="event-title">PVP Gaming</div>
+              <div class="event-meta">Date & Time<br>Coming Soon</div>
+              </div>
+            </div>
+            <div class="event-back">
+              PVP Gaming is an exciting one-on-one competition where players choose from a diverse roster of iconic 
+              characters with unique abilities. Matches will test skills and reflexes, with winners determined in 
+              a knockout format based on the best of three matches. 
+              Showcase your talents and aim to be crowned the ultimate champion!
+            </div>
+          </div>
+        </label>
+
+        <input type="checkbox" id="flip-toggle-6" hidden> 
+        <label for="flip-toggle-6" class="event-card slideY">
+          <div class="card-inner">
+            <div class="event-front">
+              <img src="../Public/images/programemer.jpg" alt="Programemer" class="event-image" />
+              <div class="event-content">
+              <div class="event-title">Programemer</div>
+              <div class="event-meta">Date & Time<br>Coming Soon</div>
+              </div>
+            </div>
+            <div class="event-back">
+              Programemer invites participants to unleash their inner meme artist! To enter, 
+              submit your original memes via the provided Google Form. Submitted memes will be posted 
+              on social media, where you can promote your entries for more likes and views. 
+              The participant with the most likes will be crowned the winner. Get creative and join the fun!
+            </div>
+          </div>
+        </label>
+
   </div>
+
+    <audio id="bgmusic" loop>
+        <source src="/Public/audio/rickroll.MP3" type="audio/mp3">
+    </audio>
+
+    <div id="music-wrapper">
+        <div id="music-pulse"></div>
+        <button id="music-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#38ccff">
+                <path d="M320-203v-560l440 280-440 280Zm60-280Zm0 171 269-171-269-171v342Z"/>
+            </svg>
+        </button>
+    </div>
+
+
 
 
   <script type="module" src="../JS/FunEvents.js"></script>
+  <script type="module" src="../components/JS/button.js"></script>
 </body>
 </html>
