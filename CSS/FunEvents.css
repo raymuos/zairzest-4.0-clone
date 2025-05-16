@@ -20,14 +20,6 @@
       margin-bottom: 10vh;
     }
 
-    .events-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 75px;
-      padding-inline: 10vw ;
-      margin-bottom: 10vh;
-    }
-
     .event-card {
       background-color: #00000000;
       border-radius: 12px;

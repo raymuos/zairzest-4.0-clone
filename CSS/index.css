@@ -157,7 +157,7 @@ p.description {
   gap: 75px;
   margin-bottom: 15vh;
 }
-.event-card {
+.event-select-card {
   position: relative;
   width: 500px;
   height: 300px;
@@ -167,10 +167,10 @@ p.description {
   transition: transform 0.3s ease;
 }
 
-.event-card:hover {
+.event-select-card:hover {
   transform: scale(1.1);
 }
-.event-card img {
+.event-select-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -232,7 +232,7 @@ a .event-label h2{
 
 @media (max-width: 768px) {
 
-    .event-card{
+    .event-select-card{
         width: 75vw;
     }
 
