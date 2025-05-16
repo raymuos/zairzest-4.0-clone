@@ -49,7 +49,9 @@ footer{
 
 #links-div{
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -80,6 +82,16 @@ footer a:hover{
 
     .mid-footer, .bottom-footer{
         flex-direction: column;
+    }
+
+    footer{
+        padding: 25px;
+
+    }
+
+    .footer-text-1{
+        max-width: 100%;
+        text-align: center;
     }
 
 }

@@ -233,7 +233,7 @@ a .event-label h2{
 @media (max-width: 768px) {
 
     .event-card{
-        width: 400px;
+        width: 75vw;
     }
 
     #hero-btns-div{

@@ -100,7 +100,11 @@ a:hover, a:focus {
         padding: 50px;
 
         background-color: #111111;
-        backdrop-filter: blur(6px);
+
+    }
+
+    #zairza-text-logo{
+        justify-content: flex-end;
     }
 
     #close-menu-icon{
@@ -129,12 +133,16 @@ a:hover, a:focus {
 @media (max-width: 450px) {
 
     #zairzest-span, #span-4-0{
-        font-size: 1.25rem;
+        letter-spacing: 0.3rem;
     }
 
     .hamburger{
         width: 20px;
         height: 30px;
+    }
+
+    header{
+        padding-inline: 10px;
     }
 
 }

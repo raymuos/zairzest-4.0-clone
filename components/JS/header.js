@@ -50,6 +50,7 @@ export function Header(){
             <a href="${base}/Pages/About.html">About Us</a>
             <a href="${base}/Pages/Register.html">Register</a>
             <a href="${base}/Pages/Login.html">Sign In</a>
+            <img src="${base}/Public/images/zairza-text-logo.webp" id="zairza-text-logo" height="40px">
         </div>
 
     </header>
