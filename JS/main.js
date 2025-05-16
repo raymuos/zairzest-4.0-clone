@@ -2,6 +2,8 @@ import {Header, showSidebar, hideSidebar} from "../components/JS/header.js";
 import {Footer} from "../components/JS/footer.js";
 
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const spinners = document.querySelectorAll(".spin");
     const observer = new IntersectionObserver( (entries, obs) => {
@@ -47,3 +49,16 @@ document.body.innerHTML += Footer();
 
 document.getElementById("menu-bar-icon").onclick = () => showSidebar();
 document.getElementById("close-menu-icon").onclick = () => hideSidebar();
+
+//Logic for the Loading Animation at the Beginning 
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader-container");
+  const content = document.getElementById("content");
+
+  loader.classList.add("fade-out");
+
+  setTimeout(() => {
+    loader.style.display = "none";
+    content.style.display = "block";
+  }, 2000); // Match with the CSS transition duration
+});
