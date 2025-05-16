@@ -232,19 +232,45 @@ a .event-label h2{
 
 @media (max-width: 768px) {
 
+    .event-card{
+        width: 400px;
+    }
+
+    #hero-btns-div{
+        flex-flow: column wrap;
+    }
+
     #hero-back-div{
-        height: 75vh;
+        padding-inline: 4vw ;
+    }
+    
+    .btn{
+        width: 50vw;
+    }
+
+    #zen-4-div{
+        padding: 0;
+    }
+
+    #panda-pita{
+        width: 100%;
+        gap: 0;
+        padding: 0;
+        flex-flow: column nowrap;
     }
 
     #panda-img{
-        height: 450px;
+        width: 100%;
+        height: auto;
     }
 
     #zen-4-heading{
         text-align: center;
     }
 
-    .event-card{
-        width: 400px;
+    #zen-4-text-div{
+        padding-inline: 2rem ;
     }
+
+    
 }

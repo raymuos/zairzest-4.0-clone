@@ -119,4 +119,22 @@ a:hover, a:focus {
     header{
         padding-inline: 40px;
     }
+
+    .hamburger{
+        width: 30px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    #zairzest-span, #span-4-0{
+        font-size: 1.25rem;
+    }
+
+    .hamburger{
+        width: 20px;
+        height: 30px;
+    }
+
 }
