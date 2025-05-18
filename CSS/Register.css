@@ -153,6 +153,17 @@ button{
     margin-top: 40px;
 }
 
+#password-container{
+    position: relative;
+}
+
+#togglePassword{
+    position: absolute;
+    top: 1rem;
+    right: 20px;
+    cursor: pointer;
+}
+
 @media (max-width: 1024px) {
     .left{
         display: none;

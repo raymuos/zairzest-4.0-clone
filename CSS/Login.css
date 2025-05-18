@@ -102,6 +102,19 @@ a:hover{
     background: #05c1ff;
 }
 
+#password-container{
+    position: relative;
+    width: 100%;
+}
+
+#togglePassword{
+    position: absolute;
+    top: 0.5rem;
+    right: 20px;
+    cursor: pointer;
+}
+
+
 @media (max-width: 1024px) {
 
     body{
